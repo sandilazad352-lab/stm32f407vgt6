@@ -29,6 +29,7 @@ set(CORE_SOURCES
     Core/Src/main.c
     Core/Src/clock.c
     Core/Src/gpio.c
+    Core/Src/wifi.c
     Core/Src/stm32f4xx_it.c
     Core/Src/system_stm32f4xx.c
     Core/Src/syscalls.c
