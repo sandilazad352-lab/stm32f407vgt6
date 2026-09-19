@@ -1,6 +1,6 @@
-# STM32_BLACK_BOX (DevEBox STM32F407VET6) - Pure CMSIS + FreeRTOS
+# STM32_BLACK_BOX (DevEBox STM32F407VGT6) - Pure CMSIS + FreeRTOS
 
-Ultra-lightweight embedded project scaffold for the **DevEBox STM32F4XX-M** development board based on the **STM32F407VET6** MCU. Built with **pure CMSIS** and **FreeRTOS Kernel** (no HAL overhead), configured for **CMake + Ninja** and **STM32CubeIDE**.
+Ultra-lightweight embedded project scaffold for the **DevEBox STM32F4XX-M** development board based on the **STM32F407VGT6** MCU. Built with **pure CMSIS** and **FreeRTOS Kernel** (no HAL overhead), configured for **CMake + Ninja** and **STM32CubeIDE**.
 
 ---
 
@@ -8,7 +8,8 @@ Ultra-lightweight embedded project scaffold for the **DevEBox STM32F4XX-M** deve
 
 | Peripheral / Feature | Configuration | Notes |
 | :--- | :--- | :--- |
-| **MCU** | STM32F407VET6 | Cortex-M4F @ 168 MHz (FPU hardware enabled) |
+| **MCU** | STM32F407VGT6 | Cortex-M4F @ 168 MHz (FPU hardware enabled) |
+| **Internal Flash** | 1 MB | `0x08000000`–`0x080FFFFF` |
 | **RTOS** | FreeRTOS Kernel | Preemptive scheduler, 1 ms tick, 48 KB heap (`heap_4.c`) |
 | **User LED (D2)** | `PA1` (Active LOW) | Driven by `vHeartbeatTask` |
 | **User Button (K1)** | `PA0` (Active HIGH) | Monitored by `vButtonTask` to adjust blink rate |
@@ -23,8 +24,8 @@ STM32_BLACK_BOX/
 ├── CMakeLists.txt                 # Top-level CMake configuration
 ├── cmake/
 │   └── gcc-arm-none-eabi.cmake    # Toolchain file for cross-compilation
-├── STM32F407VETX_FLASH.ld         # 512KB Flash linker script
-├── STM32F407VETX_RAM.ld           # RAM execution linker script
+├── STM32F407VGTX_FLASH.ld         # 1MB Flash linker script
+├── STM32F407VGTX_RAM.ld           # RAM execution linker script
 ├── .project                       # Eclipse / STM32CubeIDE project descriptor
 ├── .cproject                      # Eclipse / STM32CubeIDE compiler/linker settings
 ├── .settings/                     # STM32CubeIDE preferences
@@ -41,7 +42,7 @@ STM32_BLACK_BOX/
 │   │   ├── syscalls.c             # Newlib POSIX stubs
 │   │   └── sysmem.c               # Dynamic memory allocator stub
 │   └── Startup/
-│       └── startup_stm32f407vetx.s # Reset handler and vector table
+│       └── startup_stm32f407xx.s   # Reset handler and vector table
 ├── Drivers/
 │   └── CMSIS/                     # ARM CMSIS Core & ST STM32F407 Device headers
 ├── Middleware/

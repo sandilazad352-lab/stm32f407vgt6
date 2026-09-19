@@ -18,7 +18,7 @@ extern "C" {
 /* Board Information                                                          */
 /* -------------------------------------------------------------------------- */
 #define BOARD_NAME                  "DevEBox STM32F4XX-M"
-#define BOARD_MCU                   "STM32F407VET6"
+#define BOARD_MCU                   "STM32F407VGT6"
 #define BOARD_HSE_FREQ_HZ           8000000UL    /* 8.000 MHz HSE crystal */
 #define BOARD_LSE_FREQ_HZ           32768UL      /* 32.768 kHz RTC crystal */
 

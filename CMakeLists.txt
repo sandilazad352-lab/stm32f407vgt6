@@ -33,7 +33,7 @@ set(CORE_SOURCES
     Core/Src/system_stm32f4xx.c
     Core/Src/syscalls.c
     Core/Src/sysmem.c
-    Core/Startup/startup_stm32f407vetx.s
+    Core/Startup/startup_stm32f407xx.s
 )
 
 # FreeRTOS Kernel Sources
@@ -70,7 +70,7 @@ target_compile_definitions(${PROJECT_NAME}.elf PRIVATE
 )
 
 # Linker script & options
-set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/STM32F407VETX_FLASH.ld)
+set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/STM32F407VGTX_FLASH.ld)
 target_link_options(${PROJECT_NAME}.elf PRIVATE
     -T${LINKER_SCRIPT}
 )

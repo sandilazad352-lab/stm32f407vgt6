@@ -2,7 +2,7 @@
  ******************************************************************************
  * @file    clock.c
  * @brief   System clock configuration implementation for STM32F407 (Pure CMSIS)
- *          Board: DevEBox STM32F4XX-M (STM32F407VET6, 8 MHz HSE crystal)
+ *          Board: DevEBox STM32F4XX-M (STM32F407VGT6, 8 MHz HSE crystal)
  ******************************************************************************
  */
 

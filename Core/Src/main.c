@@ -2,7 +2,7 @@
  ******************************************************************************
  * @file           : main.c
  * @brief          : Pure CMSIS + FreeRTOS application for STM32_BLACK_BOX
- *                   Target: DevEBox STM32F4XX-M (STM32F407VET6)
+ *                   Target: DevEBox STM32F4XX-M (STM32F407VGT6)
  ******************************************************************************
  */
 

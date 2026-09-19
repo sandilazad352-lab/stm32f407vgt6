@@ -1,4 +1,4 @@
-# OpenOCD GDB Server Launcher for DevEBox STM32F407VET6 via ST-Link
+# OpenOCD GDB Server Launcher for DevEBox STM32F407VGT6 via ST-Link
 $ErrorActionPreference = "Stop"
 
 # Check if port 3333 is already in use

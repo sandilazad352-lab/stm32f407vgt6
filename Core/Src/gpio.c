@@ -2,7 +2,7 @@
  ******************************************************************************
  * @file    gpio.c
  * @brief   GPIO peripheral initialization implementation (Pure CMSIS)
- *          Board: DevEBox STM32F4XX-M (STM32F407VET6)
+ *          Board: DevEBox STM32F4XX-M (STM32F407VGT6)
  ******************************************************************************
  */
 

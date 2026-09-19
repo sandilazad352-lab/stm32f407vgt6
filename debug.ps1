@@ -2,7 +2,7 @@
 $ErrorActionPreference = "Stop"
 
 Write-Host "=========================================================" -ForegroundColor Cyan
-Write-Host "  Starting Debug Session for DevEBox STM32F407VET6" -ForegroundColor Cyan
+Write-Host "  Starting Debug Session for DevEBox STM32F407VGT6" -ForegroundColor Cyan
 Write-Host "=========================================================" -ForegroundColor Cyan
 
 # 1. Verify/Build ELF binary

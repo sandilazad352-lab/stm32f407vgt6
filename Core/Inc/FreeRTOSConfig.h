@@ -1,5 +1,5 @@
 /*
- * FreeRTOS Kernel Configuration for STM32F407VET6 (DevEBox STM32F4XX-M)
+ * FreeRTOS Kernel Configuration for STM32F407VGT6 (DevEBox STM32F4XX-M)
  * Pure CMSIS + Cortex-M4F Hardware FPU
  */
 

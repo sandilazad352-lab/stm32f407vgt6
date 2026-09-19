@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 echo =========================================================
-echo   Building STM32_BLACK_BOX (DevEBox STM32F407VET6)
+echo   Building STM32_BLACK_BOX (DevEBox STM32F407VGT6)
 echo =========================================================
 
 :: Search for STM32CubeIDE bundled toolchain if not on PATH

@@ -2,7 +2,7 @@
 $ErrorActionPreference = "Stop"
 
 Write-Host "=========================================================" -ForegroundColor Cyan
-Write-Host "  Building STM32_BLACK_BOX (DevEBox STM32F407VET6)" -ForegroundColor Cyan
+Write-Host "  Building STM32_BLACK_BOX (DevEBox STM32F407VGT6)" -ForegroundColor Cyan
 Write-Host "=========================================================" -ForegroundColor Cyan
 
 # Locate STM32CubeIDE tools if not on PATH

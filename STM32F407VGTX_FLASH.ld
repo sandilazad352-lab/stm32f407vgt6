@@ -1,10 +1,10 @@
 /*
 ******************************************************************************
 **
-**  File        : STM32F407VETX_FLASH.ld
+**  File        : STM32F407VGTX_FLASH.ld
 **
-**  Target      : STM32F407VET6 (DevEBox STM32F4XX-M)
-**                512 KBytes FLASH
+**  Target      : STM32F407VGT6 (DevEBox STM32F4XX-M)
+**               1024 KBytes FLASH
 **                128 KBytes RAM
 **                 64 KBytes CCMRAM
 **
@@ -27,7 +27,7 @@ MEMORY
 {
   CCMRAM (xrw) : ORIGIN = 0x10000000, LENGTH = 64K
   RAM    (xrw) : ORIGIN = 0x20000000, LENGTH = 128K
-  FLASH  (rx)  : ORIGIN = 0x08000000, LENGTH = 512K
+  FLASH  (rx)  : ORIGIN = 0x08000000, LENGTH = 1024K
 }
 
 /* Sections */
